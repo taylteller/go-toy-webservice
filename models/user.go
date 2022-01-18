@@ -1,13 +1,13 @@
 package models
 
+// procedural go
+
 // User defines a new user
 type User struct {
 	ID int
 	FirstName string
 	LastName string
 }
-
-// procedural go;
 
 var (
 	users []*User // a slice that holds pointers to User objects
