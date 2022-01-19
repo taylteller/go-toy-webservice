@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	pointersCheatSheet()
+	// pointersCheatSheet()
 
 	controllers.RegisterController()
 	http.ListenAndServe(":3000", nil) // front controller/back controller pattern
@@ -16,6 +16,7 @@ func main() {
 
 func pointersCheatSheet() {
 	// not a useful function except as a reference on how go pointers work, with a house analogy
+	// has nothing to do with the webservice. Good thing this webservice isn't being used IRL
 	var firstName *string = new(string)
 	*firstName = "test"                    // dereference the pointer - enter the house to put something in
 	fmt.Println("Hello hello", *firstName) // dereference the pointer - enter the house to get the contents
