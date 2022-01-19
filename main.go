@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	// pointersCheatSheet()
+	pointersCheatSheet()
 
 	controllers.RegisterController()
 	http.ListenAndServe(":3000", nil) // front controller/back controller pattern
